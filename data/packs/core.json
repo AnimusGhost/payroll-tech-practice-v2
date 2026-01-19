@@ -1,0 +1,1162 @@
+{
+  "id": "core",
+  "name": "Core Payroll Concepts",
+  "description": "Foundational payroll concepts, calculations, and common scenarios.",
+  "version": 1,
+  "questions": [
+    {
+      "id": "core_mcq_001",
+      "type": "mcq",
+      "domain": 1,
+      "difficulty": "easy",
+      "prompt": "Which document authorizes payroll to pay an employee?",
+      "choices": [
+        "Timecard approval",
+        "Social media profile",
+        "Vendor invoice",
+        "Travel itinerary"
+      ],
+      "answer": 0,
+      "explanation": "Payroll needs an authorized timecard approval to pay wages for hours worked.",
+      "tags": [
+        "process"
+      ]
+    },
+    {
+      "id": "core_mcq_002",
+      "type": "mcq",
+      "domain": 4,
+      "difficulty": "medium",
+      "prompt": "Which control best reduces the risk of paying terminated employees?",
+      "choices": [
+        "Single sign-on",
+        "Daily termination feed to payroll",
+        "Allow manual overrides",
+        "Remove pay stubs"
+      ],
+      "answer": 1,
+      "explanation": "A daily termination feed ensures payroll is updated promptly to stop payments.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_msq_001",
+      "type": "msq",
+      "domain": 3,
+      "difficulty": "medium",
+      "prompt": "Select the items that are commonly required to retain for payroll recordkeeping.",
+      "choices": [
+        "Employee name and SSN",
+        "Time and attendance records",
+        "Copy of every tax return",
+        "Rates of pay and basis"
+      ],
+      "answer": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Core payroll records include identifying info, time records, and rates of pay.",
+      "tags": [
+        "recordkeeping"
+      ]
+    },
+    {
+      "id": "core_fill_001",
+      "type": "fill",
+      "domain": 1,
+      "difficulty": "easy",
+      "prompt": "The process of balancing payroll totals to source data is called _____.",
+      "answer": "reconciliation",
+      "acceptable": [
+        [
+          "reconciliation"
+        ],
+        [
+          "tie-out"
+        ],
+        [
+          "tie out"
+        ],
+        [
+          "balancing"
+        ]
+      ],
+      "explanation": "Reconciliation (tie-out) ensures totals agree with source data.",
+      "tags": [
+        "reconciliation"
+      ]
+    },
+    {
+      "id": "core_order_001",
+      "type": "order",
+      "domain": 4,
+      "difficulty": "easy",
+      "prompt": "Place the payroll cycle steps in order.",
+      "items": [
+        "Collect time",
+        "Calculate gross",
+        "Review/audit",
+        "Disburse pay"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Time collection precedes calculation, review, and final disbursement.",
+      "tags": [
+        "workflow"
+      ]
+    },
+    {
+      "id": "core_match_001",
+      "type": "match",
+      "domain": 5,
+      "difficulty": "medium",
+      "prompt": "Match the document to its purpose.",
+      "left": [
+        "W-4",
+        "Direct deposit form",
+        "I-9"
+      ],
+      "right": [
+        "Tax withholding instructions",
+        "Payment routing",
+        "Work authorization"
+      ],
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Each document serves a distinct payroll or employment purpose.",
+      "tags": [
+        "forms"
+      ]
+    },
+    {
+      "id": "core_numeric_001",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "prompt": "An employee earns $18/hour for 36 hours. What is gross pay?",
+      "answer": 648,
+      "tolerance": 0.01,
+      "unitHint": "$",
+      "explanation": "36 x 18 = 648.",
+      "tags": [
+        "gross"
+      ],
+      "steps": [
+        "Hours x rate = gross pay."
+      ]
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "overtime",
+        "gross"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 15,
+          "rateMax": 40,
+          "hoursMin": 42,
+          "hoursMax": 55,
+          "otMultiplier": 1.5
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "overtime",
+        "gross"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 20,
+          "rateMax": 55,
+          "hoursMin": 45,
+          "hoursMax": 60,
+          "otMultiplier": 2.0
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "blended_rate_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "bonus",
+        "regular-rate"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 18,
+          "rateMax": 38,
+          "hoursMin": 40,
+          "hoursMax": 55,
+          "bonusMin": 150,
+          "bonusMax": 650
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "earnings_mix_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "earnings"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 18,
+          "rateMax": 35,
+          "regHoursMin": 32,
+          "regHoursMax": 45,
+          "otHoursMin": 4,
+          "otHoursMax": 12,
+          "shiftDiffMin": 1,
+          "shiftDiffMax": 4,
+          "stipendMin": 50,
+          "stipendMax": 150
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "pretax_posttax_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "deductions"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 900,
+          "grossMax": 2000,
+          "pretaxPercMin": 2,
+          "pretaxPercMax": 6,
+          "pretaxFlatMin": 40,
+          "pretaxFlatMax": 120,
+          "posttaxPercMin": 1,
+          "posttaxPercMax": 4
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "percent_deduction_cap_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "deductions"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 800,
+          "grossMax": 1600,
+          "rateMin": 4,
+          "rateMax": 10,
+          "capMin": 50,
+          "capMax": 120
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "pay_period_convert_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "conversion"
+      ],
+      "generator": {
+        "params": {
+          "annualMin": 42000,
+          "annualMax": 92000,
+          "periods": [
+            24,
+            26,
+            52
+          ]
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "rounding_rule_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "rounding"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 17.5,
+          "rateMax": 33.5,
+          "hoursMin": 37.25,
+          "hoursMax": 41.75
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "reconciliation_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "reconciliation"
+      ],
+      "generator": {
+        "params": {
+          "itemMin": 3,
+          "itemMax": 5,
+          "amountMin": 120,
+          "amountMax": 620
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "variance_detective_v1",
+      "type": "mcq",
+      "domain": 4,
+      "difficulty": "medium",
+      "tags": [
+        "audit"
+      ],
+      "generator": {
+        "params": {
+          "varianceMin": 80,
+          "varianceMax": 220
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "net_pay_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "net-pay"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 900,
+          "grossMax": 1800,
+          "taxRateMin": 8,
+          "taxRateMax": 15,
+          "deductionMin": 40,
+          "deductionMax": 120
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "order_pay_stub_v1",
+      "type": "order",
+      "domain": 1,
+      "difficulty": "easy",
+      "tags": [
+        "paystub"
+      ],
+      "generator": {
+        "params": {},
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "match_tax_terms_v1",
+      "type": "match",
+      "domain": 3,
+      "difficulty": "easy",
+      "tags": [
+        "tax"
+      ],
+      "generator": {
+        "params": {},
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "multi_numeric_breakdown_v1",
+      "type": "multi_numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "multi-part"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 20,
+          "rateMax": 45,
+          "hoursMin": 36,
+          "hoursMax": 44,
+          "taxRateMin": 10,
+          "taxRateMax": 18
+        },
+        "rules": {}
+      }
+    },
+    {
+      "id": "core_mcq_022",
+      "type": "mcq",
+      "domain": 4,
+      "difficulty": "medium",
+      "prompt": "Which statement best describes payroll control #22?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_023",
+      "type": "mcq",
+      "domain": 1,
+      "difficulty": "medium",
+      "prompt": "Which statement best describes payroll control #23?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_024",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "medium",
+      "prompt": "Which statement best describes payroll control #24?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_025",
+      "type": "mcq",
+      "domain": 4,
+      "difficulty": "medium",
+      "prompt": "Which statement best describes payroll control #25?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_026",
+      "type": "mcq",
+      "domain": 4,
+      "difficulty": "medium",
+      "prompt": "Which statement best describes payroll control #26?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_027",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "easy",
+      "prompt": "Which statement best describes payroll control #27?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_028",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "easy",
+      "prompt": "Which statement best describes payroll control #28?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_029",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "easy",
+      "prompt": "Which statement best describes payroll control #29?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_030",
+      "type": "mcq",
+      "domain": 1,
+      "difficulty": "hard",
+      "prompt": "Which statement best describes payroll control #30?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_031",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "hard",
+      "prompt": "Which statement best describes payroll control #31?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_032",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "easy",
+      "prompt": "Which statement best describes payroll control #32?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_033",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "easy",
+      "prompt": "Which statement best describes payroll control #33?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_034",
+      "type": "mcq",
+      "domain": 1,
+      "difficulty": "hard",
+      "prompt": "Which statement best describes payroll control #34?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_035",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "prompt": "Which statement best describes payroll control #35?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_036",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "easy",
+      "prompt": "Which statement best describes payroll control #36?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_037",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "prompt": "Which statement best describes payroll control #37?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_038",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "hard",
+      "prompt": "Which statement best describes payroll control #38?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_039",
+      "type": "mcq",
+      "domain": 2,
+      "difficulty": "hard",
+      "prompt": "Which statement best describes payroll control #39?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_040",
+      "type": "mcq",
+      "domain": 4,
+      "difficulty": "medium",
+      "prompt": "Which statement best describes payroll control #40?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_041",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "medium",
+      "prompt": "Which statement best describes payroll control #41?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_042",
+      "type": "mcq",
+      "domain": 1,
+      "difficulty": "hard",
+      "prompt": "Which statement best describes payroll control #42?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_043",
+      "type": "mcq",
+      "domain": 1,
+      "difficulty": "easy",
+      "prompt": "Which statement best describes payroll control #43?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_044",
+      "type": "mcq",
+      "domain": 4,
+      "difficulty": "hard",
+      "prompt": "Which statement best describes payroll control #44?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_045",
+      "type": "mcq",
+      "domain": 1,
+      "difficulty": "hard",
+      "prompt": "Which statement best describes payroll control #45?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_046",
+      "type": "mcq",
+      "domain": 4,
+      "difficulty": "medium",
+      "prompt": "Which statement best describes payroll control #46?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_047",
+      "type": "mcq",
+      "domain": 2,
+      "difficulty": "hard",
+      "prompt": "Which statement best describes payroll control #47?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_048",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "hard",
+      "prompt": "Which statement best describes payroll control #48?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_049",
+      "type": "mcq",
+      "domain": 1,
+      "difficulty": "easy",
+      "prompt": "Which statement best describes payroll control #49?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_050",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "easy",
+      "prompt": "Which statement best describes payroll control #50?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_051",
+      "type": "mcq",
+      "domain": 2,
+      "difficulty": "easy",
+      "prompt": "Which statement best describes payroll control #51?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_052",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "medium",
+      "prompt": "Which statement best describes payroll control #52?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_053",
+      "type": "mcq",
+      "domain": 1,
+      "difficulty": "easy",
+      "prompt": "Which statement best describes payroll control #53?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_054",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "hard",
+      "prompt": "Which statement best describes payroll control #54?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_055",
+      "type": "mcq",
+      "domain": 4,
+      "difficulty": "easy",
+      "prompt": "Which statement best describes payroll control #55?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_056",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "hard",
+      "prompt": "Which statement best describes payroll control #56?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_057",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "hard",
+      "prompt": "Which statement best describes payroll control #57?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_058",
+      "type": "mcq",
+      "domain": 1,
+      "difficulty": "hard",
+      "prompt": "Which statement best describes payroll control #58?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_059",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "hard",
+      "prompt": "Which statement best describes payroll control #59?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_060",
+      "type": "mcq",
+      "domain": 2,
+      "difficulty": "hard",
+      "prompt": "Which statement best describes payroll control #60?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_061",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "hard",
+      "prompt": "Which statement best describes payroll control #61?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "core_mcq_062",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "prompt": "Which statement best describes payroll control #62?",
+      "choices": [
+        "Segregate duties between timekeeping and payroll",
+        "Store checks in an unlocked drawer",
+        "Skip pre-processing audits",
+        "Allow employees to approve their own changes"
+      ],
+      "answer": 0,
+      "explanation": "Segregation of duties is a foundational control to reduce risk.",
+      "tags": [
+        "controls"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1726 @@
+{
+  "id": "math-drills",
+  "name": "Math Drills",
+  "description": "Fast-paced numeric practice and calculation fluency.",
+  "version": 1,
+  "questions": [
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 14,
+          "rateMax": 45,
+          "hoursMin": 41,
+          "hoursMax": 58,
+          "otMultiplier": 2.0
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "pay_period_convert_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "annualMin": 38000,
+          "annualMax": 99000,
+          "periods": [
+            24,
+            26,
+            52
+          ]
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "net_pay_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 700,
+          "grossMax": 2000,
+          "taxRateMin": 7,
+          "taxRateMax": 18,
+          "deductionMin": 30,
+          "deductionMax": 150
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "pretax_posttax_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 700,
+          "grossMax": 1800,
+          "pretaxPercMin": 2,
+          "pretaxPercMax": 8,
+          "pretaxFlatMin": 25,
+          "pretaxFlatMax": 90,
+          "posttaxPercMin": 1,
+          "posttaxPercMax": 5
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "earnings_mix_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 16,
+          "rateMax": 30,
+          "regHoursMin": 30,
+          "regHoursMax": 45,
+          "otHoursMin": 3,
+          "otHoursMax": 10,
+          "shiftDiffMin": 1,
+          "shiftDiffMax": 3,
+          "stipendMin": 25,
+          "stipendMax": 100
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 12,
+          "rateMax": 35,
+          "hoursMin": 41,
+          "hoursMax": 60,
+          "otMultiplier": 1.5
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "multi_numeric_breakdown_v1",
+      "type": "multi_numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 18,
+          "rateMax": 40,
+          "hoursMin": 35,
+          "hoursMax": 45,
+          "taxRateMin": 9,
+          "taxRateMax": 17
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "rounding_rule_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 15.25,
+          "rateMax": 36.75,
+          "hoursMin": 35.5,
+          "hoursMax": 42.75
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 14,
+          "rateMax": 45,
+          "hoursMin": 41,
+          "hoursMax": 58,
+          "otMultiplier": 2.0
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "blended_rate_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 16,
+          "rateMax": 28,
+          "hoursMin": 40,
+          "hoursMax": 50,
+          "bonusMin": 100,
+          "bonusMax": 500
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 12,
+          "rateMax": 35,
+          "hoursMin": 41,
+          "hoursMax": 60,
+          "otMultiplier": 1.5
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "reconciliation_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "itemMin": 3,
+          "itemMax": 6,
+          "amountMin": 90,
+          "amountMax": 540
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "pay_period_convert_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "annualMin": 38000,
+          "annualMax": 99000,
+          "periods": [
+            24,
+            26,
+            52
+          ]
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "reconciliation_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "itemMin": 3,
+          "itemMax": 6,
+          "amountMin": 90,
+          "amountMax": 540
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "reconciliation_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "itemMin": 3,
+          "itemMax": 6,
+          "amountMin": 90,
+          "amountMax": 540
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "earnings_mix_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 16,
+          "rateMax": 30,
+          "regHoursMin": 30,
+          "regHoursMax": 45,
+          "otHoursMin": 3,
+          "otHoursMax": 10,
+          "shiftDiffMin": 1,
+          "shiftDiffMax": 3,
+          "stipendMin": 25,
+          "stipendMax": 100
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "net_pay_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 700,
+          "grossMax": 2000,
+          "taxRateMin": 7,
+          "taxRateMax": 18,
+          "deductionMin": 30,
+          "deductionMax": 150
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "net_pay_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 700,
+          "grossMax": 2000,
+          "taxRateMin": 7,
+          "taxRateMax": 18,
+          "deductionMin": 30,
+          "deductionMax": 150
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "rounding_rule_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 15.25,
+          "rateMax": 36.75,
+          "hoursMin": 35.5,
+          "hoursMax": 42.75
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "multi_numeric_breakdown_v1",
+      "type": "multi_numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 18,
+          "rateMax": 40,
+          "hoursMin": 35,
+          "hoursMax": 45,
+          "taxRateMin": 9,
+          "taxRateMax": 17
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "percent_deduction_cap_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 600,
+          "grossMax": 1600,
+          "rateMin": 3,
+          "rateMax": 12,
+          "capMin": 30,
+          "capMax": 120
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "percent_deduction_cap_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 600,
+          "grossMax": 1600,
+          "rateMin": 3,
+          "rateMax": 12,
+          "capMin": 30,
+          "capMax": 120
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 14,
+          "rateMax": 45,
+          "hoursMin": 41,
+          "hoursMax": 58,
+          "otMultiplier": 2.0
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "net_pay_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 700,
+          "grossMax": 2000,
+          "taxRateMin": 7,
+          "taxRateMax": 18,
+          "deductionMin": 30,
+          "deductionMax": 150
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "percent_deduction_cap_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 600,
+          "grossMax": 1600,
+          "rateMin": 3,
+          "rateMax": 12,
+          "capMin": 30,
+          "capMax": 120
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "earnings_mix_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 16,
+          "rateMax": 30,
+          "regHoursMin": 30,
+          "regHoursMax": 45,
+          "otHoursMin": 3,
+          "otHoursMax": 10,
+          "shiftDiffMin": 1,
+          "shiftDiffMax": 3,
+          "stipendMin": 25,
+          "stipendMax": 100
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "pretax_posttax_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 700,
+          "grossMax": 1800,
+          "pretaxPercMin": 2,
+          "pretaxPercMax": 8,
+          "pretaxFlatMin": 25,
+          "pretaxFlatMax": 90,
+          "posttaxPercMin": 1,
+          "posttaxPercMax": 5
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "earnings_mix_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 16,
+          "rateMax": 30,
+          "regHoursMin": 30,
+          "regHoursMax": 45,
+          "otHoursMin": 3,
+          "otHoursMax": 10,
+          "shiftDiffMin": 1,
+          "shiftDiffMax": 3,
+          "stipendMin": 25,
+          "stipendMax": 100
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "blended_rate_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 16,
+          "rateMax": 28,
+          "hoursMin": 40,
+          "hoursMax": 50,
+          "bonusMin": 100,
+          "bonusMax": 500
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "pay_period_convert_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "annualMin": 38000,
+          "annualMax": 99000,
+          "periods": [
+            24,
+            26,
+            52
+          ]
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 14,
+          "rateMax": 45,
+          "hoursMin": 41,
+          "hoursMax": 58,
+          "otMultiplier": 2.0
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "earnings_mix_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 16,
+          "rateMax": 30,
+          "regHoursMin": 30,
+          "regHoursMax": 45,
+          "otHoursMin": 3,
+          "otHoursMax": 10,
+          "shiftDiffMin": 1,
+          "shiftDiffMax": 3,
+          "stipendMin": 25,
+          "stipendMax": 100
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "net_pay_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 700,
+          "grossMax": 2000,
+          "taxRateMin": 7,
+          "taxRateMax": 18,
+          "deductionMin": 30,
+          "deductionMax": 150
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "reconciliation_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "itemMin": 3,
+          "itemMax": 6,
+          "amountMin": 90,
+          "amountMax": 540
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "multi_numeric_breakdown_v1",
+      "type": "multi_numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 18,
+          "rateMax": 40,
+          "hoursMin": 35,
+          "hoursMax": 45,
+          "taxRateMin": 9,
+          "taxRateMax": 17
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 12,
+          "rateMax": 35,
+          "hoursMin": 41,
+          "hoursMax": 60,
+          "otMultiplier": 1.5
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "multi_numeric_breakdown_v1",
+      "type": "multi_numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 18,
+          "rateMax": 40,
+          "hoursMin": 35,
+          "hoursMax": 45,
+          "taxRateMin": 9,
+          "taxRateMax": 17
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "net_pay_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 700,
+          "grossMax": 2000,
+          "taxRateMin": 7,
+          "taxRateMax": 18,
+          "deductionMin": 30,
+          "deductionMax": 150
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 14,
+          "rateMax": 45,
+          "hoursMin": 41,
+          "hoursMax": 58,
+          "otMultiplier": 2.0
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 14,
+          "rateMax": 45,
+          "hoursMin": 41,
+          "hoursMax": 58,
+          "otMultiplier": 2.0
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 14,
+          "rateMax": 45,
+          "hoursMin": 41,
+          "hoursMax": 58,
+          "otMultiplier": 2.0
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "net_pay_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 700,
+          "grossMax": 2000,
+          "taxRateMin": 7,
+          "taxRateMax": 18,
+          "deductionMin": 30,
+          "deductionMax": 150
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "earnings_mix_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 16,
+          "rateMax": 30,
+          "regHoursMin": 30,
+          "regHoursMax": 45,
+          "otHoursMin": 3,
+          "otHoursMax": 10,
+          "shiftDiffMin": 1,
+          "shiftDiffMax": 3,
+          "stipendMin": 25,
+          "stipendMax": 100
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 14,
+          "rateMax": 45,
+          "hoursMin": 41,
+          "hoursMax": 58,
+          "otMultiplier": 2.0
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "earnings_mix_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 16,
+          "rateMax": 30,
+          "regHoursMin": 30,
+          "regHoursMax": 45,
+          "otHoursMin": 3,
+          "otHoursMax": 10,
+          "shiftDiffMin": 1,
+          "shiftDiffMax": 3,
+          "stipendMin": 25,
+          "stipendMax": 100
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 12,
+          "rateMax": 35,
+          "hoursMin": 41,
+          "hoursMax": 60,
+          "otMultiplier": 1.5
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 12,
+          "rateMax": 35,
+          "hoursMin": 41,
+          "hoursMax": 60,
+          "otMultiplier": 1.5
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "pay_period_convert_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "annualMin": 38000,
+          "annualMax": 99000,
+          "periods": [
+            24,
+            26,
+            52
+          ]
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 14,
+          "rateMax": 45,
+          "hoursMin": 41,
+          "hoursMax": 58,
+          "otMultiplier": 2.0
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 14,
+          "rateMax": 45,
+          "hoursMin": 41,
+          "hoursMax": 58,
+          "otMultiplier": 2.0
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 14,
+          "rateMax": 45,
+          "hoursMin": 41,
+          "hoursMax": 58,
+          "otMultiplier": 2.0
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "pretax_posttax_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 700,
+          "grossMax": 1800,
+          "pretaxPercMin": 2,
+          "pretaxPercMax": 8,
+          "pretaxFlatMin": 25,
+          "pretaxFlatMax": 90,
+          "posttaxPercMin": 1,
+          "posttaxPercMax": 5
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "pay_period_convert_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "annualMin": 38000,
+          "annualMax": 99000,
+          "periods": [
+            24,
+            26,
+            52
+          ]
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 12,
+          "rateMax": 35,
+          "hoursMin": 41,
+          "hoursMax": 60,
+          "otMultiplier": 1.5
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "rounding_rule_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 15.25,
+          "rateMax": 36.75,
+          "hoursMin": 35.5,
+          "hoursMax": 42.75
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "net_pay_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 700,
+          "grossMax": 2000,
+          "taxRateMin": 7,
+          "taxRateMax": 18,
+          "deductionMin": 30,
+          "deductionMax": 150
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "pay_period_convert_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "annualMin": 38000,
+          "annualMax": 99000,
+          "periods": [
+            24,
+            26,
+            52
+          ]
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "pretax_posttax_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 700,
+          "grossMax": 1800,
+          "pretaxPercMin": 2,
+          "pretaxPercMax": 8,
+          "pretaxFlatMin": 25,
+          "pretaxFlatMax": 90,
+          "posttaxPercMin": 1,
+          "posttaxPercMax": 5
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "rounding_rule_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 15.25,
+          "rateMax": 36.75,
+          "hoursMin": 35.5,
+          "hoursMax": 42.75
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "blended_rate_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 16,
+          "rateMax": 28,
+          "hoursMin": 40,
+          "hoursMax": 50,
+          "bonusMin": 100,
+          "bonusMax": 500
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "multi_numeric_breakdown_v1",
+      "type": "multi_numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 18,
+          "rateMax": 40,
+          "hoursMin": 35,
+          "hoursMax": 45,
+          "taxRateMin": 9,
+          "taxRateMax": 17
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 12,
+          "rateMax": 35,
+          "hoursMin": 41,
+          "hoursMax": 60,
+          "otMultiplier": 1.5
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "blended_rate_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 16,
+          "rateMax": 28,
+          "hoursMin": 40,
+          "hoursMax": 50,
+          "bonusMin": 100,
+          "bonusMax": 500
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "percent_deduction_cap_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 600,
+          "grossMax": 1600,
+          "rateMin": 3,
+          "rateMax": 12,
+          "capMin": 30,
+          "capMax": 120
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "pretax_posttax_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 700,
+          "grossMax": 1800,
+          "pretaxPercMin": 2,
+          "pretaxPercMax": 8,
+          "pretaxFlatMin": 25,
+          "pretaxFlatMax": 90,
+          "posttaxPercMin": 1,
+          "posttaxPercMax": 5
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "net_pay_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 700,
+          "grossMax": 2000,
+          "taxRateMin": 7,
+          "taxRateMax": 18,
+          "deductionMin": 30,
+          "deductionMax": 150
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "multi_numeric_breakdown_v1",
+      "type": "multi_numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 18,
+          "rateMax": 40,
+          "hoursMin": 35,
+          "hoursMax": 45,
+          "taxRateMin": 9,
+          "taxRateMax": 17
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 12,
+          "rateMax": 35,
+          "hoursMin": 41,
+          "hoursMax": 60,
+          "otMultiplier": 1.5
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "multi_numeric_breakdown_v1",
+      "type": "multi_numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 18,
+          "rateMax": 40,
+          "hoursMin": 35,
+          "hoursMax": 45,
+          "taxRateMin": 9,
+          "taxRateMax": 17
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "net_pay_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 700,
+          "grossMax": 2000,
+          "taxRateMin": 7,
+          "taxRateMax": 18,
+          "deductionMin": 30,
+          "deductionMax": 150
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "pretax_posttax_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 700,
+          "grossMax": 1800,
+          "pretaxPercMin": 2,
+          "pretaxPercMax": 8,
+          "pretaxFlatMin": 25,
+          "pretaxFlatMax": 90,
+          "posttaxPercMin": 1,
+          "posttaxPercMax": 5
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "percent_deduction_cap_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 600,
+          "grossMax": 1600,
+          "rateMin": 3,
+          "rateMax": 12,
+          "capMin": 30,
+          "capMax": 120
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "multi_numeric_breakdown_v1",
+      "type": "multi_numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 18,
+          "rateMax": 40,
+          "hoursMin": 35,
+          "hoursMax": 45,
+          "taxRateMin": 9,
+          "taxRateMax": 17
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "blended_rate_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 16,
+          "rateMax": 28,
+          "hoursMin": 40,
+          "hoursMax": 50,
+          "bonusMin": 100,
+          "bonusMax": 500
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 12,
+          "rateMax": 35,
+          "hoursMin": 41,
+          "hoursMax": 60,
+          "otMultiplier": 1.5
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 14,
+          "rateMax": 45,
+          "hoursMin": 41,
+          "hoursMax": 58,
+          "otMultiplier": 2.0
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "overtime_gross_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 12,
+          "rateMax": 35,
+          "hoursMin": 41,
+          "hoursMax": 60,
+          "otMultiplier": 1.5
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "pretax_posttax_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "easy",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 700,
+          "grossMax": 1800,
+          "pretaxPercMin": 2,
+          "pretaxPercMax": 8,
+          "pretaxFlatMin": 25,
+          "pretaxFlatMax": 90,
+          "posttaxPercMin": 1,
+          "posttaxPercMax": 5
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "earnings_mix_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 16,
+          "rateMax": 30,
+          "regHoursMin": 30,
+          "regHoursMax": 45,
+          "otHoursMin": 3,
+          "otHoursMax": 10,
+          "shiftDiffMin": 1,
+          "shiftDiffMax": 3,
+          "stipendMin": 25,
+          "stipendMax": 100
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "percent_deduction_cap_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 600,
+          "grossMax": 1600,
+          "rateMin": 3,
+          "rateMax": 12,
+          "capMin": 30,
+          "capMax": 120
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "pretax_posttax_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 700,
+          "grossMax": 1800,
+          "pretaxPercMin": 2,
+          "pretaxPercMax": 8,
+          "pretaxFlatMin": 25,
+          "pretaxFlatMax": 90,
+          "posttaxPercMin": 1,
+          "posttaxPercMax": 5
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "percent_deduction_cap_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 600,
+          "grossMax": 1600,
+          "rateMin": 3,
+          "rateMax": 12,
+          "capMin": 30,
+          "capMax": 120
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "multi_numeric_breakdown_v1",
+      "type": "multi_numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 18,
+          "rateMax": 40,
+          "hoursMin": 35,
+          "hoursMax": 45,
+          "taxRateMin": 9,
+          "taxRateMax": 17
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "blended_rate_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "hard",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "rateMin": 16,
+          "rateMax": 28,
+          "hoursMin": 40,
+          "hoursMax": 50,
+          "bonusMin": 100,
+          "bonusMax": 500
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "pretax_posttax_v1",
+      "type": "numeric",
+      "domain": 2,
+      "difficulty": "medium",
+      "tags": [
+        "drill"
+      ],
+      "generator": {
+        "params": {
+          "grossMin": 700,
+          "grossMax": 1800,
+          "pretaxPercMin": 2,
+          "pretaxPercMax": 8,
+          "pretaxFlatMin": 25,
+          "pretaxFlatMax": 90,
+          "posttaxPercMin": 1,
+          "posttaxPercMax": 5
+        },
+        "rules": {}
+      }
+    }
+  ]
+}

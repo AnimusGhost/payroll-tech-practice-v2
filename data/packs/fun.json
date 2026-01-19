@@ -1,0 +1,179 @@
+{
+  "id": "fun",
+  "name": "Fun Mode",
+  "description": "Lighthearted scenarios and themed questions.",
+  "version": 1,
+  "questions": [
+    {
+      "id": "fun_mcq_001",
+      "type": "mcq",
+      "domain": 1,
+      "difficulty": "easy",
+      "prompt": "Fun mode: Which payroll mascot best represents task 1?",
+      "choices": [
+        "Ledger Lynx",
+        "Overtime Otter",
+        "Deduction Dragon",
+        "Compliance Cat"
+      ],
+      "answer": 1,
+      "explanation": "Overtime Otter always shows up for extra hours.",
+      "tags": [
+        "fun"
+      ],
+      "funOnly": true
+    },
+    {
+      "id": "fun_mcq_002",
+      "type": "mcq",
+      "domain": 1,
+      "difficulty": "easy",
+      "prompt": "Fun mode: Which payroll mascot best represents task 2?",
+      "choices": [
+        "Ledger Lynx",
+        "Overtime Otter",
+        "Deduction Dragon",
+        "Compliance Cat"
+      ],
+      "answer": 1,
+      "explanation": "Overtime Otter always shows up for extra hours.",
+      "tags": [
+        "fun"
+      ],
+      "funOnly": true
+    },
+    {
+      "id": "fun_mcq_003",
+      "type": "mcq",
+      "domain": 1,
+      "difficulty": "easy",
+      "prompt": "Fun mode: Which payroll mascot best represents task 3?",
+      "choices": [
+        "Ledger Lynx",
+        "Overtime Otter",
+        "Deduction Dragon",
+        "Compliance Cat"
+      ],
+      "answer": 1,
+      "explanation": "Overtime Otter always shows up for extra hours.",
+      "tags": [
+        "fun"
+      ],
+      "funOnly": true
+    },
+    {
+      "id": "fun_mcq_004",
+      "type": "mcq",
+      "domain": 1,
+      "difficulty": "easy",
+      "prompt": "Fun mode: Which payroll mascot best represents task 4?",
+      "choices": [
+        "Ledger Lynx",
+        "Overtime Otter",
+        "Deduction Dragon",
+        "Compliance Cat"
+      ],
+      "answer": 1,
+      "explanation": "Overtime Otter always shows up for extra hours.",
+      "tags": [
+        "fun"
+      ],
+      "funOnly": true
+    },
+    {
+      "id": "fun_mcq_005",
+      "type": "mcq",
+      "domain": 1,
+      "difficulty": "easy",
+      "prompt": "Fun mode: Which payroll mascot best represents task 5?",
+      "choices": [
+        "Ledger Lynx",
+        "Overtime Otter",
+        "Deduction Dragon",
+        "Compliance Cat"
+      ],
+      "answer": 1,
+      "explanation": "Overtime Otter always shows up for extra hours.",
+      "tags": [
+        "fun"
+      ],
+      "funOnly": true
+    },
+    {
+      "id": "fun_mcq_006",
+      "type": "mcq",
+      "domain": 1,
+      "difficulty": "easy",
+      "prompt": "Fun mode: Which payroll mascot best represents task 6?",
+      "choices": [
+        "Ledger Lynx",
+        "Overtime Otter",
+        "Deduction Dragon",
+        "Compliance Cat"
+      ],
+      "answer": 1,
+      "explanation": "Overtime Otter always shows up for extra hours.",
+      "tags": [
+        "fun"
+      ],
+      "funOnly": true
+    },
+    {
+      "id": "fun_mcq_007",
+      "type": "mcq",
+      "domain": 1,
+      "difficulty": "easy",
+      "prompt": "Fun mode: Which payroll mascot best represents task 7?",
+      "choices": [
+        "Ledger Lynx",
+        "Overtime Otter",
+        "Deduction Dragon",
+        "Compliance Cat"
+      ],
+      "answer": 1,
+      "explanation": "Overtime Otter always shows up for extra hours.",
+      "tags": [
+        "fun"
+      ],
+      "funOnly": true
+    },
+    {
+      "id": "fun_mcq_008",
+      "type": "mcq",
+      "domain": 1,
+      "difficulty": "easy",
+      "prompt": "Fun mode: Which payroll mascot best represents task 8?",
+      "choices": [
+        "Ledger Lynx",
+        "Overtime Otter",
+        "Deduction Dragon",
+        "Compliance Cat"
+      ],
+      "answer": 1,
+      "explanation": "Overtime Otter always shows up for extra hours.",
+      "tags": [
+        "fun"
+      ],
+      "funOnly": true
+    },
+    {
+      "id": "fun_mcq_009",
+      "type": "mcq",
+      "domain": 1,
+      "difficulty": "easy",
+      "prompt": "Fun mode: Which payroll mascot best represents task 9?",
+      "choices": [
+        "Ledger Lynx",
+        "Overtime Otter",
+        "Deduction Dragon",
+        "Compliance Cat"
+      ],
+      "answer": 1,
+      "explanation": "Overtime Otter always shows up for extra hours.",
+      "tags": [
+        "fun"
+      ],
+      "funOnly": true
+    }
+  ]
+}

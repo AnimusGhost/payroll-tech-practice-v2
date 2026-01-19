@@ -1,0 +1,56 @@
+[
+  {
+    "id": "core",
+    "name": "Core Payroll Concepts",
+    "description": "Foundational payroll concepts, calculations, and common scenarios.",
+    "defaultEnabled": true,
+    "tags": ["core", "exam"],
+    "version": 1,
+    "file": "./data/packs/core.json"
+  },
+  {
+    "id": "math-drills",
+    "name": "Math Drills",
+    "description": "Fast-paced numeric practice and calculation fluency.",
+    "defaultEnabled": false,
+    "tags": ["math", "drills"],
+    "version": 1,
+    "file": "./data/packs/math-drills.json"
+  },
+  {
+    "id": "compliance",
+    "name": "Compliance",
+    "description": "Compliance, tax withholding, and recordkeeping scenarios.",
+    "defaultEnabled": false,
+    "tags": ["compliance"],
+    "version": 1,
+    "file": "./data/packs/compliance.json"
+  },
+  {
+    "id": "systems",
+    "name": "Systems & Controls",
+    "description": "Payroll systems, audits, controls, and workflow.",
+    "defaultEnabled": false,
+    "tags": ["systems"],
+    "version": 1,
+    "file": "./data/packs/systems.json"
+  },
+  {
+    "id": "ethics",
+    "name": "Ethics & Professional Practice",
+    "description": "Ethical scenarios and professional standards.",
+    "defaultEnabled": false,
+    "tags": ["ethics"],
+    "version": 1,
+    "file": "./data/packs/ethics.json"
+  },
+  {
+    "id": "fun",
+    "name": "Fun Mode",
+    "description": "Lighthearted scenarios and themed questions.",
+    "defaultEnabled": false,
+    "tags": ["fun"],
+    "version": 1,
+    "file": "./data/packs/fun.json"
+  }
+]

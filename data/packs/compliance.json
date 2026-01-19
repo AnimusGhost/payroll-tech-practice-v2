@@ -1,0 +1,416 @@
+{
+  "id": "compliance",
+  "name": "Compliance",
+  "description": "Compliance, tax withholding, and recordkeeping scenarios.",
+  "version": 1,
+  "questions": [
+    {
+      "id": "comp_mcq_001",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "prompt": "In a compliance audit, which action is most appropriate for scenario 1?",
+      "choices": [
+        "Document the variance and escalate",
+        "Ignore the issue",
+        "Pay the employee twice",
+        "Delete the record"
+      ],
+      "answer": 0,
+      "explanation": "Documenting and escalating issues is a standard compliance response.",
+      "tags": [
+        "compliance"
+      ]
+    },
+    {
+      "id": "comp_mcq_002",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "easy",
+      "prompt": "In a compliance audit, which action is most appropriate for scenario 2?",
+      "choices": [
+        "Document the variance and escalate",
+        "Ignore the issue",
+        "Pay the employee twice",
+        "Delete the record"
+      ],
+      "answer": 0,
+      "explanation": "Documenting and escalating issues is a standard compliance response.",
+      "tags": [
+        "compliance"
+      ]
+    },
+    {
+      "id": "comp_mcq_003",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "easy",
+      "prompt": "In a compliance audit, which action is most appropriate for scenario 3?",
+      "choices": [
+        "Document the variance and escalate",
+        "Ignore the issue",
+        "Pay the employee twice",
+        "Delete the record"
+      ],
+      "answer": 0,
+      "explanation": "Documenting and escalating issues is a standard compliance response.",
+      "tags": [
+        "compliance"
+      ]
+    },
+    {
+      "id": "comp_mcq_004",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "easy",
+      "prompt": "In a compliance audit, which action is most appropriate for scenario 4?",
+      "choices": [
+        "Document the variance and escalate",
+        "Ignore the issue",
+        "Pay the employee twice",
+        "Delete the record"
+      ],
+      "answer": 0,
+      "explanation": "Documenting and escalating issues is a standard compliance response.",
+      "tags": [
+        "compliance"
+      ]
+    },
+    {
+      "id": "comp_mcq_005",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "prompt": "In a compliance audit, which action is most appropriate for scenario 5?",
+      "choices": [
+        "Document the variance and escalate",
+        "Ignore the issue",
+        "Pay the employee twice",
+        "Delete the record"
+      ],
+      "answer": 0,
+      "explanation": "Documenting and escalating issues is a standard compliance response.",
+      "tags": [
+        "compliance"
+      ]
+    },
+    {
+      "id": "comp_mcq_006",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "easy",
+      "prompt": "In a compliance audit, which action is most appropriate for scenario 6?",
+      "choices": [
+        "Document the variance and escalate",
+        "Ignore the issue",
+        "Pay the employee twice",
+        "Delete the record"
+      ],
+      "answer": 0,
+      "explanation": "Documenting and escalating issues is a standard compliance response.",
+      "tags": [
+        "compliance"
+      ]
+    },
+    {
+      "id": "comp_mcq_007",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "easy",
+      "prompt": "In a compliance audit, which action is most appropriate for scenario 7?",
+      "choices": [
+        "Document the variance and escalate",
+        "Ignore the issue",
+        "Pay the employee twice",
+        "Delete the record"
+      ],
+      "answer": 0,
+      "explanation": "Documenting and escalating issues is a standard compliance response.",
+      "tags": [
+        "compliance"
+      ]
+    },
+    {
+      "id": "comp_mcq_008",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "easy",
+      "prompt": "In a compliance audit, which action is most appropriate for scenario 8?",
+      "choices": [
+        "Document the variance and escalate",
+        "Ignore the issue",
+        "Pay the employee twice",
+        "Delete the record"
+      ],
+      "answer": 0,
+      "explanation": "Documenting and escalating issues is a standard compliance response.",
+      "tags": [
+        "compliance"
+      ]
+    },
+    {
+      "id": "comp_mcq_009",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "prompt": "In a compliance audit, which action is most appropriate for scenario 9?",
+      "choices": [
+        "Document the variance and escalate",
+        "Ignore the issue",
+        "Pay the employee twice",
+        "Delete the record"
+      ],
+      "answer": 0,
+      "explanation": "Documenting and escalating issues is a standard compliance response.",
+      "tags": [
+        "compliance"
+      ]
+    },
+    {
+      "id": "comp_mcq_010",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "prompt": "In a compliance audit, which action is most appropriate for scenario 10?",
+      "choices": [
+        "Document the variance and escalate",
+        "Ignore the issue",
+        "Pay the employee twice",
+        "Delete the record"
+      ],
+      "answer": 0,
+      "explanation": "Documenting and escalating issues is a standard compliance response.",
+      "tags": [
+        "compliance"
+      ]
+    },
+    {
+      "id": "comp_mcq_011",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "prompt": "In a compliance audit, which action is most appropriate for scenario 11?",
+      "choices": [
+        "Document the variance and escalate",
+        "Ignore the issue",
+        "Pay the employee twice",
+        "Delete the record"
+      ],
+      "answer": 0,
+      "explanation": "Documenting and escalating issues is a standard compliance response.",
+      "tags": [
+        "compliance"
+      ]
+    },
+    {
+      "id": "comp_mcq_012",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "easy",
+      "prompt": "In a compliance audit, which action is most appropriate for scenario 12?",
+      "choices": [
+        "Document the variance and escalate",
+        "Ignore the issue",
+        "Pay the employee twice",
+        "Delete the record"
+      ],
+      "answer": 0,
+      "explanation": "Documenting and escalating issues is a standard compliance response.",
+      "tags": [
+        "compliance"
+      ]
+    },
+    {
+      "templateId": "variance_detective_v1",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "tags": [
+        "audit"
+      ],
+      "generator": {
+        "params": {
+          "varianceMin": 50,
+          "varianceMax": 200
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "variance_detective_v1",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "tags": [
+        "audit"
+      ],
+      "generator": {
+        "params": {
+          "varianceMin": 50,
+          "varianceMax": 200
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "variance_detective_v1",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "tags": [
+        "audit"
+      ],
+      "generator": {
+        "params": {
+          "varianceMin": 50,
+          "varianceMax": 200
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "variance_detective_v1",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "tags": [
+        "audit"
+      ],
+      "generator": {
+        "params": {
+          "varianceMin": 50,
+          "varianceMax": 200
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "variance_detective_v1",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "tags": [
+        "audit"
+      ],
+      "generator": {
+        "params": {
+          "varianceMin": 50,
+          "varianceMax": 200
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "variance_detective_v1",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "tags": [
+        "audit"
+      ],
+      "generator": {
+        "params": {
+          "varianceMin": 50,
+          "varianceMax": 200
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "variance_detective_v1",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "tags": [
+        "audit"
+      ],
+      "generator": {
+        "params": {
+          "varianceMin": 50,
+          "varianceMax": 200
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "variance_detective_v1",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "tags": [
+        "audit"
+      ],
+      "generator": {
+        "params": {
+          "varianceMin": 50,
+          "varianceMax": 200
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "variance_detective_v1",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "tags": [
+        "audit"
+      ],
+      "generator": {
+        "params": {
+          "varianceMin": 50,
+          "varianceMax": 200
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "variance_detective_v1",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "tags": [
+        "audit"
+      ],
+      "generator": {
+        "params": {
+          "varianceMin": 50,
+          "varianceMax": 200
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "variance_detective_v1",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "tags": [
+        "audit"
+      ],
+      "generator": {
+        "params": {
+          "varianceMin": 50,
+          "varianceMax": 200
+        },
+        "rules": {}
+      }
+    },
+    {
+      "templateId": "variance_detective_v1",
+      "type": "mcq",
+      "domain": 3,
+      "difficulty": "medium",
+      "tags": [
+        "audit"
+      ],
+      "generator": {
+        "params": {
+          "varianceMin": 50,
+          "varianceMax": 200
+        },
+        "rules": {}
+      }
+    }
+  ]
+}

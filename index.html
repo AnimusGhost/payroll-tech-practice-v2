@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payroll Technician Practice Exam</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <div>
+          <h1>Payroll Technician Practice Exam</h1>
+          <p class="subtitle">Practice only; not official payroll/tax advice.</p>
+        </div>
+        <div class="header-actions">
+          <button id="settings-button" class="ghost">Settings</button>
+          <button id="history-button" class="ghost">History</button>
+          <button id="calculator-toggle" class="ghost">Calculator (M)</button>
+        </div>
+      </header>
+
+      <main>
+        <section id="start-screen" class="screen">
+          <div class="panel">
+            <h2>Select a mode</h2>
+            <div class="modes">
+              <div class="mode-card active" data-mode="timed">
+                <h3>Timed Exam</h3>
+                <p>30 questions · 60 minutes · Score on submit</p>
+              </div>
+              <div class="mode-card" data-mode="study">
+                <h3>Untimed Study</h3>
+                <p>Instant feedback and explanations</p>
+              </div>
+              <div class="mode-card" data-mode="drills">
+                <h3>Math Drills</h3>
+                <p>Numeric-heavy speed practice</p>
+              </div>
+              <div class="mode-card" data-mode="domain">
+                <h3>Domain Focus</h3>
+                <p>Target selected domains</p>
+              </div>
+              <div class="mode-card" data-mode="weakness">
+                <h3>Weakness Mode</h3>
+                <p>Bias toward missed areas</p>
+              </div>
+            </div>
+
+            <div class="quick-settings">
+              <div>
+                <label for="question-count">Question count</label>
+                <input id="question-count" type="number" min="5" max="60" />
+              </div>
+              <div>
+                <label for="time-limit">Time limit (minutes)</label>
+                <input id="time-limit" type="number" min="10" max="120" />
+              </div>
+              <div>
+                <label>Enabled packs</label>
+                <div id="enabled-packs-summary" class="muted"></div>
+              </div>
+            </div>
+
+            <div class="domain-select">
+              <h3>Domain Focus</h3>
+              <div id="domain-list" class="domain-list"></div>
+            </div>
+
+            <details class="advanced">
+              <summary>Advanced settings</summary>
+              <div class="advanced-grid">
+                <div>
+                  <h4>Domain weights</h4>
+                  <div class="advanced-row">
+                    <label>Fundamentals <input data-weight-type="domain" data-key="1" type="number" step="0.05" min="0" max="1" /></label>
+                    <label>Calculations <input data-weight-type="domain" data-key="2" type="number" step="0.05" min="0" max="1" /></label>
+                    <label>Compliance <input data-weight-type="domain" data-key="3" type="number" step="0.05" min="0" max="1" /></label>
+                    <label>Systems <input data-weight-type="domain" data-key="4" type="number" step="0.05" min="0" max="1" /></label>
+                    <label>Reporting & Ethics <input data-weight-type="domain" data-key="5" type="number" step="0.05" min="0" max="1" /></label>
+                  </div>
+                </div>
+                <div>
+                  <h4>Difficulty mix</h4>
+                  <div class="advanced-row">
+                    <label>Easy <input data-weight-type="difficulty" data-key="easy" type="number" step="0.05" min="0" max="1" /></label>
+                    <label>Medium <input data-weight-type="difficulty" data-key="medium" type="number" step="0.05" min="0" max="1" /></label>
+                    <label>Hard <input data-weight-type="difficulty" data-key="hard" type="number" step="0.05" min="0" max="1" /></label>
+                  </div>
+                </div>
+                <div>
+                  <h4>Type mix</h4>
+                  <div class="advanced-row">
+                    <label>MCQ <input data-weight-type="type" data-key="mcq" type="number" step="0.05" min="0" max="1" /></label>
+                    <label>MSQ <input data-weight-type="type" data-key="msq" type="number" step="0.05" min="0" max="1" /></label>
+                    <label>Numeric <input data-weight-type="type" data-key="numeric" type="number" step="0.05" min="0" max="1" /></label>
+                    <label>Fill <input data-weight-type="type" data-key="fill" type="number" step="0.05" min="0" max="1" /></label>
+                    <label>Order <input data-weight-type="type" data-key="order" type="number" step="0.05" min="0" max="1" /></label>
+                    <label>Match <input data-weight-type="type" data-key="match" type="number" step="0.05" min="0" max="1" /></label>
+                    <label>Multi Numeric <input data-weight-type="type" data-key="multi_numeric" type="number" step="0.05" min="0" max="1" /></label>
+                  </div>
+                </div>
+              </div>
+              <div class="advanced-actions">
+                <button id="reset-blueprint" class="ghost">Reset Blueprint</button>
+                <button id="open-pack-settings" class="ghost">Manage Packs</button>
+              </div>
+            </details>
+
+            <div class="actions">
+              <button id="start-button" class="primary">Start Attempt</button>
+              <button id="resume-button" class="ghost hidden">Resume Attempt</button>
+            </div>
+          </div>
+        </section>
+
+        <section id="exam-screen" class="screen hidden">
+          <div class="exam-header">
+            <div>
+              <span class="pill" id="mode-label">Timed Exam</span>
+              <span id="question-counter" class="muted"></span>
+            </div>
+            <div>
+              <span id="timer" class="timer">00:00</span>
+            </div>
+          </div>
+
+          <div class="exam-body">
+            <aside class="sidebar">
+              <div class="meta">
+                <div><strong>Domain:</strong> <span id="question-domain"></span></div>
+                <div><strong>Difficulty:</strong> <span id="question-difficulty"></span></div>
+                <div><strong>Type:</strong> <span id="question-type"></span></div>
+              </div>
+              <div id="drill-stats" class="muted"></div>
+              <div class="sidebar-actions">
+                <button id="flag-button" class="ghost">Flag (Shift+F)</button>
+                <button id="submit-button" class="danger">Submit</button>
+              </div>
+              <div class="hint-panel">
+                <p class="muted">Tip: Use Arrow keys to navigate. Ctrl+Enter to submit.</p>
+              </div>
+            </aside>
+
+            <div class="question-card">
+              <div id="question-area"></div>
+              <div id="question-feedback"></div>
+              <div class="nav-buttons">
+                <button id="prev-button" class="ghost">Previous</button>
+                <button id="next-button" class="primary">Next</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="results-screen" class="screen hidden">
+          <div class="panel">
+            <div class="results-header">
+              <div>
+                <h2>Results</h2>
+                <p id="results-status"></p>
+              </div>
+              <div class="score" id="results-score">0%</div>
+            </div>
+            <div class="summary-pills">
+              <span class="pill">Mode: <strong id="results-mode"></strong></span>
+              <span class="pill">Seed: <strong id="results-seed"></strong></span>
+              <span class="pill">Time: <strong id="results-time"></strong></span>
+            </div>
+            <div id="results-summary" class="summary-grid"></div>
+
+            <div class="breakdowns">
+              <div>
+                <h3>Domain Breakdown</h3>
+                <div id="breakdown-domain"></div>
+              </div>
+              <div>
+                <h3>Type Breakdown</h3>
+                <div id="breakdown-type"></div>
+              </div>
+              <div>
+                <h3>Difficulty Breakdown</h3>
+                <div id="breakdown-difficulty"></div>
+              </div>
+              <div>
+                <h3>Time Breakdown</h3>
+                <div id="breakdown-time"></div>
+              </div>
+            </div>
+
+            <div class="history-chart">
+              <h3>Recent Attempts</h3>
+              <div id="history-chart" class="chart"></div>
+            </div>
+
+            <div class="review-section">
+              <h3>Review</h3>
+              <div class="filters">
+                <select id="filter-status">
+                  <option value="all">All</option>
+                  <option value="incorrect">Incorrect</option>
+                  <option value="correct">Correct</option>
+                </select>
+                <select id="filter-domain"></select>
+                <select id="filter-type"></select>
+                <label><input id="filter-flagged" type="checkbox" /> Flagged</label>
+              </div>
+              <div class="review-actions">
+                <button id="retake-missed" class="ghost">Retake Missed</button>
+                <button id="retake-flagged" class="ghost">Retake Flagged</button>
+                <button id="drill-from-missed" class="ghost">Create Drill Set</button>
+                <button id="download-pdf" class="ghost">Download Results (PDF)</button>
+              </div>
+              <div id="review-list" class="review-list"></div>
+            </div>
+
+            <div class="actions">
+              <button id="new-attempt" class="primary">Start New Attempt</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="calculator" class="calculator hidden" role="dialog" aria-label="Calculator">
+      <div class="calc-header">Calculator</div>
+      <input type="text" aria-label="Calculator display" readonly />
+      <div class="calc-grid">
+        <button data-action="clear">C</button>
+        <button data-action="back">⌫</button>
+        <button data-action="memory">M+</button>
+        <button data-action="recall">MR</button>
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button data-value="/">÷</button>
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button data-value="*">×</button>
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <button data-value="-">−</button>
+        <button data-value="0">0</button>
+        <button data-value=".">.</button>
+        <button data-action="copy">Copy</button>
+        <button data-value="+">+</button>
+        <button data-action="equals" class="equals">=</button>
+      </div>
+    </div>
+
+    <div id="settings-modal" class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Settings</h3>
+          <button data-close class="ghost">Close</button>
+        </div>
+        <div class="modal-body">
+          <label for="default-mode">Default mode</label>
+          <select id="default-mode">
+            <option value="timed">Timed Exam</option>
+            <option value="study">Untimed Study</option>
+            <option value="drills">Math Drills</option>
+            <option value="domain">Domain Focus</option>
+            <option value="weakness">Weakness Mode</option>
+          </select>
+
+          <label><input id="fun-toggle" type="checkbox" /> Enable Fun Mode Pack</label>
+          <label><input id="partial-credit" type="checkbox" /> Allow partial credit</label>
+
+          <h4>Question Packs</h4>
+          <div id="pack-list" class="pack-list"></div>
+        </div>
+        <div class="modal-footer">
+          <button id="clear-history" class="ghost">Clear history</button>
+          <button id="save-settings" class="primary">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="history-modal" class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Attempt History</h3>
+          <button data-close class="ghost">Close</button>
+        </div>
+        <div class="modal-body">
+          <div id="history-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./assets/app.js"></script>
+  </body>
+</html>

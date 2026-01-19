@@ -1,0 +1,398 @@
+{
+  "id": "ethics",
+  "name": "Ethics & Professional Practice",
+  "description": "Ethical scenarios and professional standards.",
+  "version": 1,
+  "questions": [
+    {
+      "id": "eth_mcq_001",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "medium",
+      "prompt": "A payroll technician discovers sensitive data in scenario 1. What is the best response?",
+      "choices": [
+        "Follow confidentiality policy and report to supervisor",
+        "Share with coworkers",
+        "Post on social media",
+        "Ignore it"
+      ],
+      "answer": 0,
+      "explanation": "Confidentiality and escalation are core ethics expectations.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_mcq_002",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "easy",
+      "prompt": "A payroll technician discovers sensitive data in scenario 2. What is the best response?",
+      "choices": [
+        "Follow confidentiality policy and report to supervisor",
+        "Share with coworkers",
+        "Post on social media",
+        "Ignore it"
+      ],
+      "answer": 0,
+      "explanation": "Confidentiality and escalation are core ethics expectations.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_mcq_003",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "easy",
+      "prompt": "A payroll technician discovers sensitive data in scenario 3. What is the best response?",
+      "choices": [
+        "Follow confidentiality policy and report to supervisor",
+        "Share with coworkers",
+        "Post on social media",
+        "Ignore it"
+      ],
+      "answer": 0,
+      "explanation": "Confidentiality and escalation are core ethics expectations.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_mcq_004",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "medium",
+      "prompt": "A payroll technician discovers sensitive data in scenario 4. What is the best response?",
+      "choices": [
+        "Follow confidentiality policy and report to supervisor",
+        "Share with coworkers",
+        "Post on social media",
+        "Ignore it"
+      ],
+      "answer": 0,
+      "explanation": "Confidentiality and escalation are core ethics expectations.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_mcq_005",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "medium",
+      "prompt": "A payroll technician discovers sensitive data in scenario 5. What is the best response?",
+      "choices": [
+        "Follow confidentiality policy and report to supervisor",
+        "Share with coworkers",
+        "Post on social media",
+        "Ignore it"
+      ],
+      "answer": 0,
+      "explanation": "Confidentiality and escalation are core ethics expectations.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_mcq_006",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "medium",
+      "prompt": "A payroll technician discovers sensitive data in scenario 6. What is the best response?",
+      "choices": [
+        "Follow confidentiality policy and report to supervisor",
+        "Share with coworkers",
+        "Post on social media",
+        "Ignore it"
+      ],
+      "answer": 0,
+      "explanation": "Confidentiality and escalation are core ethics expectations.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_mcq_007",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "medium",
+      "prompt": "A payroll technician discovers sensitive data in scenario 7. What is the best response?",
+      "choices": [
+        "Follow confidentiality policy and report to supervisor",
+        "Share with coworkers",
+        "Post on social media",
+        "Ignore it"
+      ],
+      "answer": 0,
+      "explanation": "Confidentiality and escalation are core ethics expectations.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_mcq_008",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "easy",
+      "prompt": "A payroll technician discovers sensitive data in scenario 8. What is the best response?",
+      "choices": [
+        "Follow confidentiality policy and report to supervisor",
+        "Share with coworkers",
+        "Post on social media",
+        "Ignore it"
+      ],
+      "answer": 0,
+      "explanation": "Confidentiality and escalation are core ethics expectations.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_mcq_009",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "medium",
+      "prompt": "A payroll technician discovers sensitive data in scenario 9. What is the best response?",
+      "choices": [
+        "Follow confidentiality policy and report to supervisor",
+        "Share with coworkers",
+        "Post on social media",
+        "Ignore it"
+      ],
+      "answer": 0,
+      "explanation": "Confidentiality and escalation are core ethics expectations.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_mcq_010",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "easy",
+      "prompt": "A payroll technician discovers sensitive data in scenario 10. What is the best response?",
+      "choices": [
+        "Follow confidentiality policy and report to supervisor",
+        "Share with coworkers",
+        "Post on social media",
+        "Ignore it"
+      ],
+      "answer": 0,
+      "explanation": "Confidentiality and escalation are core ethics expectations.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_mcq_011",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "easy",
+      "prompt": "A payroll technician discovers sensitive data in scenario 11. What is the best response?",
+      "choices": [
+        "Follow confidentiality policy and report to supervisor",
+        "Share with coworkers",
+        "Post on social media",
+        "Ignore it"
+      ],
+      "answer": 0,
+      "explanation": "Confidentiality and escalation are core ethics expectations.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_mcq_012",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "easy",
+      "prompt": "A payroll technician discovers sensitive data in scenario 12. What is the best response?",
+      "choices": [
+        "Follow confidentiality policy and report to supervisor",
+        "Share with coworkers",
+        "Post on social media",
+        "Ignore it"
+      ],
+      "answer": 0,
+      "explanation": "Confidentiality and escalation are core ethics expectations.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_mcq_013",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "easy",
+      "prompt": "A payroll technician discovers sensitive data in scenario 13. What is the best response?",
+      "choices": [
+        "Follow confidentiality policy and report to supervisor",
+        "Share with coworkers",
+        "Post on social media",
+        "Ignore it"
+      ],
+      "answer": 0,
+      "explanation": "Confidentiality and escalation are core ethics expectations.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_mcq_014",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "medium",
+      "prompt": "A payroll technician discovers sensitive data in scenario 14. What is the best response?",
+      "choices": [
+        "Follow confidentiality policy and report to supervisor",
+        "Share with coworkers",
+        "Post on social media",
+        "Ignore it"
+      ],
+      "answer": 0,
+      "explanation": "Confidentiality and escalation are core ethics expectations.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_mcq_015",
+      "type": "mcq",
+      "domain": 5,
+      "difficulty": "medium",
+      "prompt": "A payroll technician discovers sensitive data in scenario 15. What is the best response?",
+      "choices": [
+        "Follow confidentiality policy and report to supervisor",
+        "Share with coworkers",
+        "Post on social media",
+        "Ignore it"
+      ],
+      "answer": 0,
+      "explanation": "Confidentiality and escalation are core ethics expectations.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_fill_000",
+      "type": "fill",
+      "domain": 5,
+      "difficulty": "easy",
+      "prompt": "The ethical principle of acting in the organization's best interest is called _____.",
+      "answer": "integrity",
+      "acceptable": [
+        [
+          "integrity"
+        ],
+        [
+          "honesty"
+        ]
+      ],
+      "explanation": "Integrity refers to honest, principled actions.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_fill_001",
+      "type": "fill",
+      "domain": 5,
+      "difficulty": "easy",
+      "prompt": "The ethical principle of acting in the organization's best interest is called _____.",
+      "answer": "integrity",
+      "acceptable": [
+        [
+          "integrity"
+        ],
+        [
+          "honesty"
+        ]
+      ],
+      "explanation": "Integrity refers to honest, principled actions.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_fill_002",
+      "type": "fill",
+      "domain": 5,
+      "difficulty": "easy",
+      "prompt": "The ethical principle of acting in the organization's best interest is called _____.",
+      "answer": "integrity",
+      "acceptable": [
+        [
+          "integrity"
+        ],
+        [
+          "honesty"
+        ]
+      ],
+      "explanation": "Integrity refers to honest, principled actions.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_fill_003",
+      "type": "fill",
+      "domain": 5,
+      "difficulty": "easy",
+      "prompt": "The ethical principle of acting in the organization's best interest is called _____.",
+      "answer": "integrity",
+      "acceptable": [
+        [
+          "integrity"
+        ],
+        [
+          "honesty"
+        ]
+      ],
+      "explanation": "Integrity refers to honest, principled actions.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_fill_004",
+      "type": "fill",
+      "domain": 5,
+      "difficulty": "easy",
+      "prompt": "The ethical principle of acting in the organization's best interest is called _____.",
+      "answer": "integrity",
+      "acceptable": [
+        [
+          "integrity"
+        ],
+        [
+          "honesty"
+        ]
+      ],
+      "explanation": "Integrity refers to honest, principled actions.",
+      "tags": [
+        "ethics"
+      ]
+    },
+    {
+      "id": "eth_fill_005",
+      "type": "fill",
+      "domain": 5,
+      "difficulty": "easy",
+      "prompt": "The ethical principle of acting in the organization's best interest is called _____.",
+      "answer": "integrity",
+      "acceptable": [
+        [
+          "integrity"
+        ],
+        [
+          "honesty"
+        ]
+      ],
+      "explanation": "Integrity refers to honest, principled actions.",
+      "tags": [
+        "ethics"
+      ]
+    }
+  ]
+}
